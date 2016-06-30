@@ -64,5 +64,5 @@
     <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
     <script src="assets/plugins/metisMenu/jquery.metisMenu.js"></script>
 </body>
-<footer class="footer">Powered by <a href="http://www.groupe-casino.fr/en/activities/latin-america-2">GreenYellow - BR</a><div class="footer signature">Developed by Vinicius Negrão</div></footer>
+<footer class="footer">Powered by <a target="_blank" href="http://www.groupe-casino.fr/en/activities/latin-america-2">GreenYellow - BR</a><div class="footer signature">Developed by Vinicius Negrão</div></footer>
 </html>

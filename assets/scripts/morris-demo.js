@@ -1,16 +1,45 @@
 
 //morris area chart
+/*
+Como criar variaveis JS com php;
+<?php
 
+$title = "Hello";
+
+?>
+<script language="javascript">
+    var title = "<?php print $title; ?>";
+</script>
+
+*/
+
+<?php
+    $data = date('d/m/y');
+    $consulta=mysql_query("SELECT SOBRECONSUMO_DIA, DATA_I FROM `atividades` WHERE SOBRECONSUMO = 1 and SOBRECONSUMO_DIA <> NULL");
+    $numrows=mysql_num_rows($consulta);
+    do {
+
+            $valor[$x]=$rows['SOBRECONSUMO_DIA'];
+            $data[$x]=$rows['DATA_I'];
+            echo "<script type=\"text/javascript\"> var x = '"$x"'var valor[x]='".$valor[$x]"' var data[x]='".$data[$x]"'}</script>";
+    } while ($rows= mysql_fetch_array($consulta))
+
+?>
+   <script>
+/*
 $(function () {
-
+    for (var i; x=i;i++)
+    {
     Morris.Area({
         element: 'morris-area-chart',
         data: [{
-            period: '2010 Q1',
-            iphone: 2666,
-            ipad: null,
-            itouch: 2647
-        }, {
+            period: data[x],
+            valor de consumo: valor[x],
+        }
+]})
+</script>/
+
+        , {
             period: '2010 Q2',
             iphone: 2778,
             ipad: 2294,
@@ -115,7 +144,7 @@ $(function () {
         labels: ['Series A', 'Series B'],
         hideHover: 'auto',
         resize: true
-    });
+    }); 
     //morris line chart
     Morris.Line({
         element: 'morris-line-chart',
@@ -156,3 +185,9 @@ $(function () {
     });
 
 });
+<?php
+
+    $x=0;
+    $valor=null;
+
+?>*/

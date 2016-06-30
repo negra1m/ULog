@@ -37,6 +37,7 @@
 	                                    <input class="form-control" placeholder="Password" name="senha" id="senha" type="password"/>
 	                                </div>
 	                                <input class="btn btn-lg btn-success btn-block" type="submit" value="Entrar"/>
+                                  
 	                        </fieldset>
                         </form>
                     </div>
@@ -52,5 +53,5 @@
 
 
 </body>
-<footer class="footer">Powered by <a href="http://www.groupe-casino.fr/en/activities/latin-america-2">GreenYellow - BR</a><div class="footer signature">Developed by Vinicius Negrão</div></footer>
+<footer class="footer">Powered by <a target="_blank" href="http://www.groupe-casino.fr/en/activities/latin-america-2">GreenYellow - BR</a><div class="footer signature">Developed by Vinicius Negrão</div></footer>
 </html>
