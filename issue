@@ -1,0 +1,18 @@
+ <?php
+  $consulta=mysql_query("SELECT SOBRECONSUMO_DIA, DATA_I, DATA_F FROM `atividades` WHERE SOBRECONSUMO = 1 and SOBRECONSUMO_DIA <> 0 LIMIT 10");
+  
+  for($x=0; $x==9; $x++) 
+  {
+        $rows=mysqli_fetch_array($consulta);
+        $valor[$x]=$rows['SOBRECONSUMO_DIA'][$x];
+        $datai[$x]=$rows['DATA_I'][$x];
+        $dataf[$x]=$rows['DATA_F'][$x];
+        //$intervalo = $datai[$x]->diff($dataf[$x]);
+       // $calc= ($intervalo*$valor[$x]);
+        echo "<tr><td>valor[x]</td>";
+        echo "<td>datai[x]</td>";
+        echo "<td>dataf[x]</td></tr>";
+        //$calc=0;
+       // $intervlao=0;
+  }
+  ?>
